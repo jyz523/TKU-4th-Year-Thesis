@@ -18,6 +18,7 @@
 body {
     background-color: var(--cream-beige);
     color: #333;
+    line-height: 1.6;
 }
 
 /* Topbar and Logo */
@@ -36,33 +37,34 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds some space between the logo and the text */
+    gap: 10px;
 }
 
 .nav-buttons {
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     margin: 20px 0;
 }
 
 /* Navigation */
 .nav button {
-    margin: 0 10px;
+    margin: 0;
     padding: 10px 20px;
     border: none;
-    border-radius: 8px; /* Softens the edges */
+    border-radius: 8px;
     cursor: pointer;
-    background-color: #fff;
+    background-color: var(--white);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, transform 0.2s;
 }
 
 nav button:hover {
     background-color: #f0f0f0;
-    transform: scale(1.05); /* Makes the button appear slightly larger on hover */
+    transform: scale(1.05);
 }
 
+/* General Button Style */
 .button {
     padding: 8px 20px;
     border: 2px solid #333;
@@ -76,7 +78,7 @@ nav button:hover {
 
 .button:hover {
     background-color: #333;
-    color: #fff;
+    color: var(--white);
 }
 
 /* Main Content Layout */
@@ -84,11 +86,28 @@ nav button:hover {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
     max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
-    gap: 20px;
+    gap: 40px;
+}
+
+/* Image Section - Positioned to the Left */
+.image-section {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-circle {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Intro Section */
@@ -105,18 +124,18 @@ nav button:hover {
 }
 
 .description {
-    font-size: 1em;
+    font-size: 18px;
     line-height: 1.5;
     margin-bottom: 15px;
 }
 
 /* Contact Section Styling */
 .contact {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .contact-link {
@@ -133,58 +152,8 @@ nav button:hover {
     top: 0;
     width: 5px;
     height: 100%;
-    background-color: #D91656;
+    background-color: var(--tamkang-red);
     border-radius: 2px;
-}
-
-
-/* Image Section */
-.image-section {
-    flex-shrink: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.image-circle {
-    width: 300px;
-    height: 300px;
-    overflow: hidden;
-    border-radius: 50%;
-    margin: 0 auto 40px auto; /* Centers it horizontally with a margin below */
-    display: block; /* Centers when the container is wider */
-}
-
-.image-container {
-    position: relative;
-    width: 400px;
-    height: 400px;
-    border-radius: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    margin-top: -300px;
-    margin-left: 500px;
-}
-
-.main-image {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.overlay-image {
-    position: absolute;
-    bottom: -20px;
-    right: -20px;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 3px solid var(--white);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Decorative Elements */
@@ -208,5 +177,3 @@ nav button:hover {
     right: -25px;
     transform: rotate(-45deg);
 }
-
-
