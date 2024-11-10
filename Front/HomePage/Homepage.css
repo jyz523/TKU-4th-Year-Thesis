@@ -1,0 +1,212 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+    --cream-beige: #FFF3DA;
+    --tamkang-red: #D91656;
+    --black: #000;
+    --white: #fff;
+}
+
+/* Body */
+body {
+    background-color: var(--cream-beige);
+    color: #333;
+}
+
+/* Topbar and Logo */
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds some space between the logo and the text */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 20px 0;
+}
+
+/* Navigation */
+.nav button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px; /* Softens the edges */
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05); /* Makes the button appear slightly larger on hover */
+}
+
+.button {
+    padding: 8px 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    background-color: var(--white);
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Main Content Layout */
+.main-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+/* Intro Section */
+.intro-section {
+    flex: 1;
+    max-width: 600px;
+}
+
+.title {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.description {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Contact Section Styling */
+.contact {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.contact-link {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    padding-left: 15px;
+}
+
+.contact-link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 5px;
+    height: 100%;
+    background-color: #D91656;
+    border-radius: 2px;
+}
+
+
+/* Image Section */
+.image-section {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-circle {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 40px auto; /* Centers it horizontally with a margin below */
+    display: block; /* Centers when the container is wider */
+}
+
+.image-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-top: -300px;
+    margin-left: 500px;
+}
+
+.main-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.overlay-image {
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid var(--white);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Decorative Elements */
+.decorative {
+    position: absolute;
+    width: 50px;
+    height: 15px;
+    border-radius: 5px;
+}
+
+.black {
+    background-color: var(--black);
+    top: 20px;
+    left: -20px;
+    transform: rotate(45deg);
+}
+
+.white {
+    background-color: var(--white);
+    bottom: 30px;
+    right: -25px;
+    transform: rotate(-45deg);
+}
+
+
