@@ -6,11 +6,7 @@ const port = 3000;
 app.use(express.static(path.join(__dirname, 'Front')));
 
 app.get('/index', (req, res) => {
-<<<<<<< HEAD
-    
-=======
   res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'index.html'));
->>>>>>> 2cdf62a (Fix dorm and server files)
 });
 
 app.get('/', (req, res) => {
@@ -18,11 +14,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/dormitory', (req, res) => {
-<<<<<<< HEAD
-
-=======
   res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormitory.html'));
->>>>>>> 2cdf62a (Fix dorm and server files)
 });
 
 app.get('/dorm123', (req, res) => {
