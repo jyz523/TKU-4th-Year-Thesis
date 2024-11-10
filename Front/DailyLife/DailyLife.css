@@ -1,0 +1,136 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF3DA;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.daily-life-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 20px;
+}
+
+.header-logo {
+    width: 304px;
+    height: auto;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+.nav-button {
+    border-radius: 11px;
+    background-color: #FFF;
+    padding: 15px;
+    border: 1px solid #000;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+    background-color: #D91656;
+    color: #FFF;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 86px;
+}
+
+.content-card {
+    border-radius: 30px;
+    background-color: #D9D9D9;
+    padding: 34px;
+    text-align: center;
+    flex: 1 1 calc(50% - 10px);
+    min-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.content-card:hover,
+.content-card:focus-within {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: 12px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.survival-101 {
+    background-color: #FFF;
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.survival-101 h2 {
+    color: #D91656;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.survival-101 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.survival-101 li {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .daily-life-container {
+        padding: 20px;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .nav-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .content-card {
+        flex: 1 1 100%;
+    }
+}
