@@ -6,14 +6,21 @@
     font-family: Arial, sans-serif;
 }
 
-/* Colors */
-:root {
-    --cream-beige: #FFF3DA;
+/* Body and Background */
+body {
+    background-color: #FFF3DA;
+    color: #333;
 }
 
-/* Body */
-body {
-    background-color: var(--cream-beige);
-    color: #333;
-    line-height: 1.6;
+/* Topbar and Logo */
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
 }
