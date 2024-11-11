@@ -3,6 +3,8 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+app.use(express.static(path.join(__dirname, 'Campus_Life')));
+
 app.use(express.static(path.join(__dirname, 'Front')));
 
 app.get('/index', (req, res) => {
@@ -56,6 +58,12 @@ app.get('/dormtkufee', (req, res) => {
 app.get('/dormtkupublic', (req, res) => {
   res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormtku_public.html'));
 });
+
+app.get('/campus', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'campus.html'));
+});
+
+
 
 // Start the server
 app.listen(port, () => {
