@@ -134,7 +134,3 @@ a {
     color: var(--tamkang-red);
     text-decoration: none;
 }
-
-a:hover {
-    text-decoration: underline;
-}
