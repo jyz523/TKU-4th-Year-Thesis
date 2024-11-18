@@ -28,6 +28,7 @@ body {
 }
 
 .logo {
+    display: flex;
     position: absolute;
     left: 20px;
     height: 60px;
@@ -92,28 +93,28 @@ main {
     display: flex;
     flex-direction: column;
     background-color: #F0F0F0;
-    text-align: center; /* Aligns all text within the igr container to the left */
+    text-align: center;
 }
 
 
 
 /* Enlarge the last .igr container for the image */
 .content .igr:last-child {
-    flex: 1.5; /* Increases the width of the right-side card */
+    flex: 1.5; /
     text-align: center;
 
 }
 
 .content .igr:last-child .card {
-    min-width: 300px; /* Ensures a minimum width */
-    min-height: 400px; /* Ensures a minimum height */
-    padding: 30px; /* Adds more space inside the box */
+    min-width: 300px;
+    min-height: 400px;
+    padding: 30px;
 }
 
 .content .igr:nth-child(3) .card ul {
     list-style: none;
     padding-left: 20px;
-    text-align: left; /* Center-aligns the list */
+    text-align: left;
 }
 
 .content .igr:nth-child(3) .card ul li {
@@ -125,11 +126,11 @@ main {
     padding: 20px;
     border-radius: 8px;
     background-color: #ffffff;
-    text-align: left; /* Ensures all text aligns to the left */
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centers the image horizontally */
-    justify-content: left; /* Centers the image vertically */
+    align-items: center;
+    justify-content: left;
 }
 
 /* Section Headings */
@@ -140,7 +141,7 @@ main {
     padding: 10px 20px;
     border-radius: 20px;
     margin-bottom: 20px;
-    text-align: center; /* Aligns section headings to the left */
+    text-align: center;
 }
 
 /* Content Text Styling */
@@ -149,7 +150,7 @@ main {
     font-size: 0.9em;
     line-height: 1.6;
     color: #333;
-    text-align: left; /* Ensures paragraphs and lists align left */
+    text-align: left;
 }
 
 .card ul {
@@ -163,9 +164,9 @@ main {
 
 /* Image Styling */
 .card img {
-    max-width: 100%; /* Ensures it doesn’t overflow the card */
-    max-height: 100%; /* Adjusts height within the container */
-    object-fit: contain; /* Maintains aspect ratio without cropping */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
     border-radius: 8px;
 }
 
