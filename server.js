@@ -63,6 +63,20 @@ app.get('/campus', (req, res) => {
   res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'campus.html'));
 });
 
+app.get('/holiday', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'Holiday.html'));
+});
+
+app.get('/library', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'library.html'));
+});
+
+app.get('/schoolcafe', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'school_cafe.html'));
+});
+app.get('/findgary', (req, res) => {
+  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'Find_Gary.html'));
+});
 
 
 // Start the server

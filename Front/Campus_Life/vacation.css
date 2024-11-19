@@ -1,0 +1,135 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #FFF3DA;
+  color: #333;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.logo {
+  height: 80px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #FFF;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #FFF;
+}
+
+/* Main Content Section */
+.content-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #FFF;
+  border: 2px solid #333;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+/* Image Gallery */
+.image-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.gallery-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Section */
+.info-text {
+  flex: 2;
+  padding-left: 100px;
+  text-align: center;
+}
+
+.info-text h1 {
+  font-size: 2em;
+  margin: 0 auto 20px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  text-align: center;
+}
+
+.info-text p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+.arrow {
+  font-size: 2em;
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+}
+
+.link {
+  font-size: 1.2em;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info-text {
+    padding-left: 0;
+  }
+
+  .gallery-image {
+    margin: 0 auto;
+  }
+
+  .info-text h1 {
+    text-align: center;
+  }
+}
