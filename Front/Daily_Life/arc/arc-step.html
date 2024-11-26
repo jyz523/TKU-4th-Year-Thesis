@@ -1,193 +1,191 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-/* Colors */
-:root {
-    --cream-beige: #FFF3DA;
-    --tamkang-red: #D91656;
-    --black: #000;
-    --white: #fff;
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tamkang University Homepage">
+    <title>Tamkang University - ARC Information</title>
+    <link rel="stylesheet" href="arc-step.css">
+</head>
 
-/* Body */
-body {
-    background-color: var(--cream-beige);
-    color: #333;
-    line-height: 1.6;
-}
+<body>
+<header>
+    <div class="topbar">
+        <a href="/server.js/Front/Daily_Life/arc/arc.html">
+            <img src="/Front/public/logo.png" alt="Tamkang University Logo" class="logo">
+        </a>
+        <nav class="nav-buttons" aria-label="Main navigation">
+            <a href="/server.js/Front/Daily_Life/survival/tku_survival_101.html" class="button">TKU Survival 101</a>
+            <a href="/server.js/Front/Daily_Life/arc/arc.html" class="button">ARC</a>
+            <a href="/server.js/Front/Daily_Life/nhi/nhi.html" class="button">NHI</a>
+            <a href="/server.js/Front/Daily_Life/work_permit/work_permit.html" class="button">Work Permit</a>
+        </nav>
+    </div>
+</header>
 
-/* Topbar and Logo */
-.topbar {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    gap: 15px;
-}
+<main>
+    <section class="arc-section">
+        <h2 class="section-title">1. Introduction</h2>
+        <div class="arc-content">
+            <p>
+                ARC is an identity document issued by the National Immigration Agency which proves legal residence for
+                foreign nationals (non-ROC nationals) in Taiwan. Foreign and overseas Chinese students who pursue
+                undergraduate or graduate studies in Taiwan are required to apply for an ARC through the online application
+                system within <strong>30 days</strong> after they enter Taiwan with a Resident Visa or obtain a Resident Visa
+                through visa change in Taiwan.
+            </p>
+        </div>
 
-.logo {
-    position: absolute; /* Position*/
-    top: 20px;
-    left: 20px;
-    max-width: 245px; /*logo size */
-}
+        <h2 class="section-title">2. Qualification</h2>
+        <div class="arc-content">
+            <p>
+                Foreign nationals who have never been approved for naturalization in Taiwan,
+                and have a valid reason to reside in Taiwan (e.g. studying at TKU).
+            </p>
+        </div>
 
-.logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
+        <h2 class="section-title">3. Application Process</h2>
+        <div class="arc-content">
+            <p>
+                1. International and overseas Chinese students who pursue undergraduate or graduate studies in Taiwan can
+                apply for the ARC through the <a href="https://coa.immigration.gov.tw/coa-frontend/student/entry?lang=en">online application system</a>
+                with a <strong>certificate of enrollment</strong> provided by the university/institution.
+            </p>
+            <p>
+                2. The application must be done within <strong>30 days</strong> of arrival in Taiwan, or issue date of
+                Resident Visa within Taiwan.
+            </p>
+            <p>
+                3. International and overseas Chinese students who need to extend their stay in Taiwan due to academic
+                requirements should apply for an ARC extension online within <strong>90 days</strong> before the ARC expires.
+            </p>
+        </div>
 
-.nav-buttons {
-    display: flex;
-    justify-content: flex-end; /* Aligns buttons to the right */
-    gap: 50px; /* Spacing between buttons */
-    margin-right: 50px; /* Adjusts the right margin to move buttons inward */
-    padding: 0 300px; /* Adds consistent horizontal padding */
-}
+        <h2 class="section-title">4. Check Your Progress</h2>
+        <div class="arc-content">
+            <h3>1. Check Your Application Progress</h3>
+            <p>
+                After filling out and submitting an online application form, students will receive a 12-digit confirmation number.
+                Students may use the confirmation number to track their progress via the online system through
+                "progress inquiry" → "application progress inquiry."
+            </p>
+            <h3>2. Check for Priority Application</h3>
+            <p>
+                After filling out and submitting an online application form, students will receive a 12-digit confirmation number.
+                Students may use the confirmation number to track their progress via the "priority" section.
+            </p>
+        </div>
+
+        <h2 class="section-title">5. Online Payment</h2>
+        <div class="arc-content">
+            <p>
+                After the online application is reviewed and approved by the National Immigration Agency, please complete your ARC payment fee within 5 working days.
+            </p>
+            <ol>
+                <li>One-year residence permit for foreign students: NT$1,000.</li>
+                <li>Two-year residence permit for foreign students: NT$2,000.</li>
+                <li>Three-year residence permit for foreign students: NT$3,000.</li>
+                <li>ARC alteration or re-issuance: NT$500.</li>
+            </ol>
+            <p>
+                The online system provides multiple payment options, including international credit card, online ATM, virtual account payment, e-government payment platform, and payment at the convenience store (including 7-Eleven and Family Mart). The payment option of "international credit card" does not support China UnionPay and American Express. Only JCB, VISA, and MasterCard credit cards can be used for online payment.
+            </p>
+        </div>
+
+        <h2 class="section-title">How to get ARC</h2>
+        <div class="arc-contentt">
+            <div style="display: flex; justify-content: left; gap: 20px; align-items: center;">
+                <div class="image-container">
+                    <img src="pic/Taipei.png" alt="Taipei ARC pick up location">
+                    <p>( Taipei City Service Center <span class="highlight-red">CLOSEST</span> to TKU )</p>
+                </div>
+                <div class="image-container">
+                    <img src="pic/New_Taipei.png" alt="New Taipei ARC pick up location">
+                    <p>( New Taipei City Service Center <span class="highlight-red">SUPER FAR</span> from TKU )</p>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">6. E-residence Permit and Receipt Download</h2>
+        <div class="step6">
+            <p>
+
+                After the application is approved by National Immigration Agency and the ARC payment fee is completed,
+                you will receive an e-mail from the system informing you that the e-residence permit and receipt are ready for download.
+                Students can sign in to the system and download their e-residence permit and receipt from "download section" -->
+                "e-residence permit download and "receipt download." Please bring the e-receipt to service center in order to pick up your ARC card.
+            </p>
+            <div class="image-container">
+                <img src="pic/receipt.png" alt="Sample Receipt from National Immigration Agency">
+                <img src="pic/arc.png" alt="Sample ARC card image">
+            </div>
+
+        </div>
+
+        <h2 class="section-title">7. Important Notice for ARC</h2>
+        <div class="arc-content">
+            <ol>
+                <li>
+                    Foreigners' residency will be ceased by the authorized agency, and they may be expelled from Taiwan if
+                    they overstay in Taiwan without applying for ARC extension.
+                </li>
+                <li>
+                    Foreigners who need to change the information on their ARC (e.g., change of address) should apply to
+                    update their ARC online within 30 days of the change.
+                </li>
+                <li>
+                    Please apply for ARC extension within 90 days before your ARC expires if you will continue your study at NTU.
+                </li>
+                <li>
+                    If you plan to leave Taiwan during your studies, please make sure your ARC will still be valid at the
+                    time you return to Taiwan before departure. Please apply for ARC extension online if necessary.
+                </li>
+                <li>
+                    If you apply for leave of absence or withdrawal from school, your ARC (purpose of residence is Study at TKU)
+                    will be cancelled after you complete the TKU leaving procedures. If you would like to enrol in TKU again
+                    after your leave of absence period is over, you need to apply for a new visa to enter Taiwan and obtain a new ARC.
+                    For more information, please see
+                    <a href="https://english.acad.tku.edu.tw/5-1.pdf">Leave of Absence, Re-enrollment, Withdrawal</a>.
+                </li>
+                <li>
+                    Graduates seeking employment in Taiwan are required to provide a graduation certificate to extend
+                    their period of stay. The maximum extension is one year (issued six months at a time), starting from the month of graduation.
+                    If students have postponed their graduation, they are required to provide supportive documents to keep or extend their ARC.
+                </li>
+            </ol>
+            <h3>Overstay Information:</h3>
+            <ol>
+                <li>
+                    Overstay within <strong>30 days</strong> (the 30th day excluded) but still enrolled at TKU:
+                    pay the fine and the application fee for the ARC extension.
+                </li>
+                <li>
+                    Overstay more than <strong>30 days</strong> (the 30th day included) but still enrolled at TKU:
+                    pay the fine and leave the country in 7 days to apply for a new visa and re-enter Taiwan.
+                </li>
+                <li>Overstay Fine:</li>
+                <ul>
+                    <li>1-10 days: NTD$10,000</li>
+                    <li>11-30 days: NTD$20,000</li>
+                    <li>31-60 days: NTD$30,000</li>
+                    <li>61-90 days: NTD$40,000</li>
+                    <li>Over 91 days: NTD$50,000</li>
+                </ul>
+            </ol>
+        </div>
 
 
-/* Navigation */
-.nav button {
-    margin: 0;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    background-color: var(--white);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.2s;
-}
 
-nav button:hover {
-    background-color: #f0f0f0;
-    transform: scale(1.05);
-}
 
-/* General Button Style */
-.button {
-    padding: 8px 20px;
-    border: 2px solid #333;
-    border-radius: 8px;
-    background-color: var(--white);
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-}
+        <section class="help-section">
+            <h2>Help Video for ARC Application</h2>
+            <p>This link will help you apply for the ARC step by step :</p>
+            <a href="https://youtu.be/G3tq03f9Qnc?si=NyeGph6a0mXR_8Af" target="_blank">ARC Application Guide Video</a>
+        </section>
 
-/* Ensure visited links don’t show a marked color */
-.button:visited {
-    color: #333;
-    background-color: var(--white);
-}
+    </section>
+</main>
 
-.button:hover {
-    background-color: #333;
-    color: var(--white);
-}
-
-/* Section Styling */
-.arc-section {
-    padding: 40px;
-    margin: 20px;
-    border-radius: 8px;
-}
-
-.section-title {
-    color: #333;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.arc-content {
-    margin-bottom: 20px;
-}
-
-.arc-content h3 {
-    font-size: 1em;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.arc-content p {
-    font-size: 1em;
-    margin-bottom: 10px;
-    line-height: 1.6;
-}
-
-.arc-content ol {
-    padding-left: 20px;
-    list-style: decimal;
-    margin-top: 10px;
-    margin-bottom: 20px;
-}
-
-.arc-content ol li {
-    margin-bottom: 10px;
-}
-
-.arc-contentt {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 20px auto;
-    max-width: 1000px;
-}
-
-.image-container {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.image-container img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 5px;
-}
-
-.highlight-red {
-    color: red;
-    font-weight: bold;
-}
-
-.step6 {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.step6 p {
-    margin-bottom: 20px;
-}
-
-.step6 .image-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.step6 .image-container img {
-    width: 400px;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-/* Link Styling */
-a {
-    color: var(--tamkang-red);
-    text-decoration: none;
-}
+</body>
+</html>
