@@ -30,8 +30,10 @@ body {
 }
 
 .logo {
-    height: 60px;
-    margin-right: 20px;
+    position: absolute; /* Position*/
+    top: 20px;
+    left: 20px;
+    max-width: 245px; /*logo size */
 }
 
 .logo-container {
@@ -42,10 +44,12 @@ body {
 
 .nav-buttons {
     display: flex;
-    justify-content: center;
-    gap: 50px;
-    margin: 20px 0;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 50px; /* Spacing between buttons */
+    margin-right: 50px; /* Adjusts the right margin to move buttons inward */
+    padding: 0 300px; /* Adds consistent horizontal padding */
 }
+
 
 /* Navigation */
 .nav button {
