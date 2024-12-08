@@ -94,20 +94,21 @@ nav button:hover {
 
 /* Content Section */
 .content-section {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 60px;
     background-color: #FFF3DA;
-    border: 2px solid #333;
-    border-radius: 15px;
+    border: 3px solid #333;
+    border-radius: 30px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-height: 600px;
 }
 
 /* Holiday Container */
 .holiday-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -116,14 +117,11 @@ nav button:hover {
 }
 
 .holiday-column p {
-    margin: 15px 0;
-    font-size: 1.2em;
+    margin: 20px 0;
+    font-size: 1.6em;
     line-height: 1.5;
 }
 
-.holiday-column p:first-child {
-    font-weight: bold;
-}
 
 /* Back Button */
 .back-button {
@@ -152,7 +150,7 @@ nav button:hover {
     .holiday-container {
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 10px;
     }
 
     .holiday-column {
