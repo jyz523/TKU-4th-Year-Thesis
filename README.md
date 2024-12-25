@@ -41,3 +41,4 @@ This project represents a tailored solution for the challenges faced by internat
 - **HTML**
 - **CSS**
 - **JavaScript**
+- **Node.js**
