@@ -3,83 +3,19 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
+app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'Campus_Life')));
-
-app.use(express.static(path.join(__dirname, 'Front')));
-
-app.get('/index', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'index.html'));
-});
+app.use(express.static(path.join(__dirname, 'Contact_Us')));
+app.use(express.static(path.join(__dirname, 'Daily_Life')));
+app.use(express.static(path.join(__dirname, 'Department')));
+app.use(express.static(path.join(__dirname, 'Dorm')));
+app.use(express.static(path.join(__dirname, 'HomePage')));
 
 app.get('/', (req, res) => {
-    res.redirect('/index');
+    res.sendFile(path.join(__dirname, 'public', 'HomePage', 'Homepage.html'));
 });
 
-app.get('/dormitory', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormitory.html'));
-});
-
-app.get('/dorm123', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123.html'));
-});
-
-app.get('/dorm123location', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123_location.html'));
-});
-
-app.get('/dorm123public', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123_public.html'));
-});
-
-app.get('/dorm123fee2people', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123_fee2people.html'));
-});
-
-app.get('/dorm123fee4people', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123_fee4people.html'));
-});
-
-app.get('/dorm123QA', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dorm123QA.html'));
-});
-
-app.get('/dormtku', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormtku.html'));
-});
-
-app.get('/dormtkulocation', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormtku_location.html'));
-});
-
-app.get('/dormtkufee', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormtku_fee.html'));
-});
-
-app.get('/dormtkupublic', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Dorm', 'dormtku_public.html'));
-});
-
-app.get('/campus', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'campus.html'));
-});
-
-app.get('/holiday', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'Holiday.html'));
-});
-
-app.get('/library', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'library.html'));
-});
-
-app.get('/schoolcafe', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'school_cafe.html'));
-});
-app.get('/findgary', (req, res) => {
-  res.sendFile(path.join(__dirname, 'Front', 'Campus_Life', 'Find_Gary.html'));
-});
-
-
-// Start the server
-app.listen(port, () => {
-    console.log(`Server running at http://localhost:${port}`);
+// Start the server, listening on all network interfaces
+app.listen(port, '192.168.0.104', () => {
+    console.log(`Server running at http://000.000.0.000:${port}`); /* Change it into your own IPv4 address */
 });
