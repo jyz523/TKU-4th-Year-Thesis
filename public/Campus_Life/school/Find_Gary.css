@@ -1,0 +1,177 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Colors */
+:root {
+    --cream-beige: #FFF3DA;
+    --black: #000;
+    --white: #fff;
+}
+
+/* Body */
+body {
+    background-color: var(--cream-beige);
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Topbar and Logo */
+.topbar {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.logo {
+    position: absolute; /* Position */
+    top: 20px;
+    left: 20px;
+    max-width: 245px; /* Logo size */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: flex-end; /* Aligns buttons to the right */
+    gap: 50px; /* Spacing between buttons */
+    margin-right: 50px; /* Adjusts the right margin to move buttons inward */
+    padding: 0 300px; /* Adds consistent horizontal padding */
+}
+
+/* Navigation */
+.nav button {
+    margin: 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav button:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.05);
+}
+
+/* General Button Style */
+.button {
+    padding: 6px 15px; /* Reduced padding */
+    border: 1.5px solid #333; /* Slightly thinner border */
+    border-radius: 6px; /* Reduced border radius */
+    background-color: var(--white);
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:visited {
+    color: #333;
+    background-color: var(--white);
+}
+
+.button:hover {
+    background-color: #333;
+    color: var(--white);
+}
+
+/* Content Section */
+.content-section {
+    max-width: 1000px; /* Reduced max width */
+    margin: 40px auto; /* Reduced margin */
+    padding: 40px; /* Smaller padding */
+    background-color: #fff;
+    border: 2px solid #333; /* Thinner border */
+    border-radius: 15px; /* Reduced border radius */
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2em; /* Smaller font size */
+    margin-bottom: 20px; /* Reduced margin */
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+/* Content Layout */
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15px; /* Reduced gap */
+}
+
+/* Image Gallery */
+.image-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Reduced gap */
+}
+
+.gallery-image {
+    width: 100%;
+    max-width: 300px; /* Smaller image size */
+    border-radius: 10px; /* Reduced border radius */
+}
+
+/* Info Area */
+.info-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Reduced gap */
+    max-width: 350px; /* Reduced max width */
+}
+
+.building-info {
+    font-size: 1.2em; /* Smaller font size */
+    background-color: #f0ece1;
+    padding: 20px; /* Reduced padding */
+    border-radius: 15px; /* Reduced border radius */
+    margin-bottom: 8px; /* Smaller margin */
+    width: 85%; /* Reduced width */
+}
+
+.map-image {
+    width: 100%;
+    max-width: 300px; /* Smaller map size */
+    border-radius: 10px; /* Reduced border radius */
+}
+
+/* Back Button */
+.back-button {
+    position: fixed;
+    bottom: 15px; /* Adjusted position */
+    left: 15px;
+    font-size: 1.5em; /* Smaller font size */
+    color: #333;
+    text-decoration: none; /* Removed underline */
+    background-color: #f7f3e9;
+    padding: 8px 10px; /* Reduced padding */
+    border-radius: 50%;
+    border: 1.5px solid #333; /* Thinner border */
+    box-shadow: 1.5px 1.5px 3px rgba(0, 0, 0, 0.2); /* Adjusted shadow */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #333;
+    color: #fff;
+}
